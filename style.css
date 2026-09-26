@@ -59,7 +59,7 @@ header {
 }
 
 .titulo-principal {
-    font-family: 'Russo One', sans-serif; /* Nova fonte para o título */
+    font-family: 'Russo One', sans-serif; 
     font-size: 3.5rem;
     color: var(--cor-texto);
     text-transform: uppercase;
