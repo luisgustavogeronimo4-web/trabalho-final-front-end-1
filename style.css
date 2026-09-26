@@ -1,25 +1,25 @@
-/* Importação de fonte no estilo Persona */
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Segoe+UI:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Russo+One&family=Segoe+UI:wght@400;700&display=swap');
 
-/* 1. SELETOR UNIVERSAL: Reseta margens e padroniza o cálculo de tamanhos */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 2. DEFINIÇÃO DE VARIÁVEIS - PALETA PERSONA 3 RELOAD */
+
 :root {
-    --cor-fundo: #020b18;          /* Azul escuro profundo / Noite */
-    --cor-card: #081d3d;           /* Azul médio da interface */
-    --cor-destaque: #00d2ff;       /* Azul ciano neon elétrico */
-    --cor-amarelo: #ffe600;        /* Amarelo de acento Persona */
+    --cor-fundo: #020b18;          
+    --cor-card: #081d3d;           
+    --cor-destaque: #00d2ff;       
+    --cor-amarelo: #ffe600;        
     --cor-texto: #ffffff;
     --cor-texto-secundario: #a3c7ef;
 }
 
-/* Seletor de Elemento (body) com gradiente e estilo P3R */
+
 body {
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, var(--cor-fundo) 0%, #04142c 100%);
@@ -28,7 +28,7 @@ body {
     line-height: 1.6;
 }
 
-/* Estilização de Títulos no estilo P3R */
+
 h1, h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -36,7 +36,7 @@ h1, h2, h3, h4 {
     letter-spacing: 1px;
 }
 
-/* Links */
+
 a {
     color: var(--cor-destaque);
     text-decoration: none;
@@ -47,10 +47,8 @@ a:hover {
     color: var(--cor-amarelo);
 }
 
-/* 3. ESTILIZAÇÃO DO CABEÇALHO E MENU */
-/* Cabeçalho com Imagem de Fundo */
+
 header {
-    /* Substitui 'banner.jpg' pelo nome do teu ficheiro de imagem na pasta imagens/ */
     background: linear-gradient(rgba(2, 11, 24, 0.75), rgba(2, 11, 24, 0.9)), url('imagens/BANNER1.jpg');
     background-size: cover;
     background-position: center;
@@ -76,7 +74,6 @@ header {
     margin-bottom: 20px;
 }
 
-/* Menu com pontas anguladas e destaque amarelo P3R */
 .menu-navegacao ul {
     list-style: none;
     display: flex;
@@ -103,7 +100,6 @@ header {
     box-shadow: 0 0 15px var(--cor-destaque);
 }
 
-/* 4. ÁREA PRINCIPAL E CARTÕES DE CONTEÚDO */
 main {
     width: 90%;
     max-width: 1000px;
@@ -114,7 +110,6 @@ section, article {
     margin-bottom: 35px;
 }
 
-/* Cartões com margem ciano marcante */
 .cartao-jogo {
     background-color: var(--cor-card);
     padding: 25px;
@@ -123,7 +118,6 @@ section, article {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-/* Moldura estilizada na imagem */
 figure {
     margin: 25px 0;
     text-align: center;
@@ -144,7 +138,6 @@ figcaption {
     font-style: italic;
 }
 
-/* Caixa lateral estilo diálogo/alerta de jogo */
 .nota-lateral {
     background: linear-gradient(90deg, #0f2b5c 0%, var(--cor-card) 100%);
     padding: 20px;
@@ -156,7 +149,6 @@ figcaption {
     color: var(--cor-amarelo);
 }
 
-/* 1. ESTILIZAÇÃO DA TABELA (Estilo Persona 3) */
 .tabela-jogos {
     width: 100%;
     border-collapse: collapse;
@@ -165,7 +157,6 @@ figcaption {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Cabeçalho da tabela */
 .tabela-jogos th {
     background-color: var(--cor-destaque);
     color: #000;
@@ -177,7 +168,6 @@ figcaption {
     font-size: 1.1rem;
 }
 
-/* Linhas e Células */
 .tabela-jogos td {
     padding: 12px;
     border-bottom: 1px solid rgba(0, 210, 255, 0.2);
@@ -187,7 +177,6 @@ figcaption {
     background-color: rgba(0, 210, 255, 0.1);
 }
 
-/* 2. ESTILIZAÇÃO DAS LISTAS */
 .lista-categorias, .lista-top {
     margin: 15px 0 25px 30px;
 }
@@ -206,7 +195,6 @@ figcaption {
     font-weight: bold;
 }
 
-/* Link Interno formatado como botão */
 .link-interno {
     display: inline-block;
     margin-top: 15px;
@@ -216,7 +204,6 @@ figcaption {
     color: var(--cor-amarelo);
 }
 
-/* 3. ESTILIZAÇÃO DO RODAPÉ (<footer>) */
 .rodape-site {
     background-color: var(--cor-card);
     border-top: 4px solid var(--cor-destaque);
@@ -236,8 +223,6 @@ figcaption {
     font-size: 0.9rem;
 }
 
-/* 4. DESENVOLVIMENTO RESPONSIVO (@media query) */
-/* Adaptação do layout para telas menores (smartphones) */
 @media (max-width: 768px) {
     .titulo-principal {
         font-size: 2rem;
